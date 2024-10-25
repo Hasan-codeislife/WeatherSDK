@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "78550DF6-C25C-415E-975B-429D3A8587D9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "WeatherSDKTests",
+        "name" : "WeatherSDKTests"
+      }
+    }
+  ],
+  "version" : 1
+}

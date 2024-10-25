@@ -1,0 +1,13 @@
+{
+  "data": [
+    {
+      "temp": 11.7,
+      "ts": 1729983164,
+      "weather": {
+        "description": "Clear sky",
+        "code": 800,
+        "icon": "c01n"
+      },
+    }
+  ]
+}

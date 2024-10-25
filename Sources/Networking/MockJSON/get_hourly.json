@@ -1,0 +1,220 @@
+{
+    "data": [
+        {
+            "temp": 16.3,
+            "ts": 1729944000,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 16.8,
+            "ts": 1729947600,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 16.8,
+            "ts": 1729951200,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 15.9,
+            "ts": 1729954800,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 14.6,
+            "ts": 1729958400,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02n"
+            },
+        },
+        {
+            "temp": 13.5,
+            "ts": 1729962000,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02n"
+            },
+        },
+        {
+            "temp": 12.3,
+            "ts": 1729965600,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02n"
+            },
+        },
+        {
+            "temp": 11.5,
+            "ts": 1729969200,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02n"
+            },
+        },
+        {
+            "temp": 10.9,
+            "ts": 1729972800,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02n"
+            },
+        },
+        {
+            "temp": 10.5,
+            "ts": 1729976400,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 10,
+            "ts": 1729980000,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 9.8,
+            "ts": 1729983600,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 9.4,
+            "ts": 1729987200,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 9.1,
+            "ts": 1729990800,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 8.8,
+            "ts": 1729994400,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 8.5,
+            "ts": 1729998000,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 8.4,
+            "ts": 1730001600,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 8.4,
+            "ts": 1730005200,
+            "weather": {
+                "description": "Clear Sky",
+                "code": 800,
+                "icon": "c01n"
+            },
+        },
+        {
+            "temp": 8.5,
+            "ts": 1730008800,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 9.2,
+            "ts": 1730012400,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 10.5,
+            "ts": 1730016000,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 11.9,
+            "ts": 1730019600,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 13.5,
+            "ts": 1730023200,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        },
+        {
+            "temp": 14.5,
+            "ts": 1730026800,
+            "weather": {
+                "description": "Few clouds",
+                "code": 801,
+                "icon": "c02d"
+            },
+        }
+    ],
+}
