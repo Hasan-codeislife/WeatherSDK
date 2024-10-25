@@ -1,0 +1,38 @@
+import Foundation
+
+enum MyError: Error {
+    /// example error handling with no actual implementation
+    case unknown
+    case apiResponseError
+}
+
+protocol ApiManagerProtocol {
+    func makeNetworkCall<T: Codable>(router: Routable) async throws -> T
+}
+
+final class ApiManager: ApiManagerProtocol {
+    
+    private var apiClient: APIClientProtocol
+    
+    init(client: APIClientProtocol) {
+        self.apiClient = client
+    }
+    
+    func makeNetworkCall<T: Codable>(router: Routable) async throws -> T {
+        let urlRequest = router.urlRequest
+        let response = await apiClient.dataTask(urlRequest)
+        switch response {
+        case .success((let data, _)):
+            let decoder = JSONDecoder()
+            do {
+                let apiResponse = try decoder.decode(T.self, from: data)
+                return apiResponse
+            } catch let error {
+                throw error
+            }
+            /// You can also implement individual status codes here for various functions (e.g upgrade popup)
+        case .failure(let error):
+            throw error
+        }
+    }
+}
