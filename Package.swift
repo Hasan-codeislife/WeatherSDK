@@ -23,7 +23,6 @@ let package = Package(
                 .product(name: "ComposableArchitecture", package: "swift-composable-architecture")
             ],
             path: "Sources",
-            exclude: ["../Tests", "../Examples"],
             resources: [
                 .process("Networking/MockJSON/get_current.json"),
                 .process("Networking/MockJSON/get_hourly.json"),
