@@ -28,20 +28,22 @@ class WeatherViewReducer: Reducer {
         case dismissSDK
     }
     
-    init(delegate: WeatherSDKDelegate) {
+    init(delegate: WeatherSDKDelegate, service: WeatherServiceProtocol = WeatherService.create()) {
         self.delegate = delegate
+        self.service = service
     }
     
     weak var delegate: WeatherSDKDelegate?
+    var service: WeatherServiceProtocol
     
     func reduce(into state: inout State, action: Action) -> Effect<Action> {
         switch action {
         case .fetchWeather:
             let cityName = state.cityName
             state.isLoading = true
+            let service = self.service
             return .run { send in
                 do {
-                    let service = WeatherService.create()
                     let (current, day) = try await service.getForecast(cityName: cityName)
                     await send(.weatherResponse(.success((current, day))))
                 } catch let error {

@@ -4,9 +4,6 @@ import Testing
 
 class NetworkLayerTests {
     
-    // Mock city name for testing
-    private let mockCityName: String = "Berlin"
-    
     // Helper method to create a valid URL from a string
     private func createURL(from string: String) throws -> URL {
         guard let url = URL(string: string) else {
@@ -16,7 +13,7 @@ class NetworkLayerTests {
     }
     
     @Test func testJSONFileRetrieval() async {
-        let testURLString = "https://api.weatherbit.io/v2.0/forecast/hourly?city=\(mockCityName)&hours=24&key=random-api-key"
+        let testURLString = "https://api.weatherbit.io/v2.0/forecast/hourly?city=\(MockData.mockCity)&hours=24&key=random-api-key"
         let testURL = try! createURL(from: testURLString)
         let urlRequest = URLRequest(url: testURL)
         let mockAPIClient = MockAPIClient()
@@ -31,7 +28,7 @@ class NetworkLayerTests {
         let service = WeatherService(apiManager: ApiManager(client: mockAPIClient))
         
         do {
-            let (current, day) = try await service.getForecast(cityName: mockCityName)
+            let (current, day) = try await service.getForecast(cityName: MockData.mockCity)
             #expect(current != nil, "Expected to parse and retrieve valid current weather from JSON")
             #expect(day != nil, "Expected to parse and retrieve valid hourly weather from JSON")
         } catch {

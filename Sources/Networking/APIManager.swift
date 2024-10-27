@@ -6,13 +6,13 @@ enum MyError: Error {
     case apiResponseError
 }
 
-protocol ApiManagerProtocol {
+protocol ApiManagerProtocol: Sendable {
     func makeNetworkCall<T: Codable>(router: Routable) async throws -> T
 }
 
 final class ApiManager: ApiManagerProtocol {
     
-    private var apiClient: APIClientProtocol
+    private let apiClient: APIClientProtocol
     
     init(client: APIClientProtocol) {
         self.apiClient = client
